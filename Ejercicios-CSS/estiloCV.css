@@ -1,0 +1,23 @@
+
+div{
+    border: 2px solid #feab5a;
+    border-radius: 25px;
+    margin: 20px 25px;
+    padding: 18px;
+    background-color: rgba(30,05,08,0.3);
+    box-shadow: 5px 7px #f1f1f1;
+}
+#foto{
+    width: 150px;
+    float: left;
+    border-radius: 50%;
+}
+.cuerpo_pagina{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    background: linear-gradient(to right, #ef4141, #e57588);
+}
+h1, h2, h3{
+    text-shadow: 2px 5px #f8972d;
+
+}
