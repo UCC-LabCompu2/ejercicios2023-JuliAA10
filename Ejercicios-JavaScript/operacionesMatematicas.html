@@ -20,25 +20,25 @@
             <span id="totalS" name="sum_total"></span>
         </p>
         <p>
-            <input id="numr1" type="text" name="res_num1" onchange="resta()">
+            <input id="numr1" type="text" name="res_num1" onchange="verLetra(this.id,this.value); resta()">
             -
-            <input id="numr2" type="text" name="res_num2" onchange="resta()">
+            <input id="numr2" type="text" name="res_num2" onchange="verLetra(this.id,this.value); resta()">
             =
-            <input id="totalR" type="text" name="res_total" disabled>
+            <span id="totalR" name="res_total"></span>
         </p>
         <p>
-            <input id="numm1" type="text" name="mul_num1" onchange="multip()">
+            <input id="numm1" type="text" name="mul_num1" onchange="verLetra(this.id,this.value); multip()">
             x
-            <input id="numm2" type="text" name="mul_num2" onchange="multip()">
+            <input id="numm2" type="text" name="mul_num2" onchange="verLetra(this.id,this.value); multip()">
             =
-            <input id="totalM" type="text" name="mul_total" disabled>
+            <span id="totalM" name="mul_total"></span>
         </p>
         <p>
-            <input id="numd1" type="text" name="div_num1" onchange="divic()">
+            <input id="numd1" type="text" name="div_num1" onchange="verLetra(this.id,this.value); divic()">
             /
-            <input id="numd2" type="text" name="div_num2" onchange="divic()">
+            <input id="numd2" type="text" name="div_num2" onchange="verLetra(this.id,this.value); divic()">
             =
-            <input id="totalD" type="text" name="div_total" disabled>
+            <span id="totalD" name="div_total"></span>
         </p>
     </form>
 </div>
