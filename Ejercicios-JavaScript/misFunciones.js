@@ -187,3 +187,51 @@ let tomarDatosLS = () => {
 
     document.getElementById("dist").value = `${cant} ${unid}`;
 }
+
+let dibujarCirculoCuadrado = () => {
+    const canvas = document.getElementById("myCanvas");
+    const  ctx = canvas.getContext("2d");
+
+
+    const anchomax = canvas.width;
+    const alturamax = canvas.height;
+
+    ctx.beginPath();
+    ctx.fillStyle = "#4333";
+    ctx.arc(anchomax/2, alturamax/2, 100, 0, 2*Math.PI);
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
+
+    const  margen = 8;
+    ctx.beginPath();
+    ctx.fillStyle = "red";
+    ctx.fillRect(0+margen, alturamax-100-margen, 150, 100);
+    ctx.fill();
+    ctx.closePath();
+
+}
+
+let limpiarCanvas = () => {
+    const canvas = document.getElementById("myCanvas");
+    const  ctx = canvas.getContext("2d");
+
+    canvas.width = canvas.width;
+}
+
+let dibujar = () => {
+    const canvas = document.getElementById("myCanvas");
+    const  ctx = canvas.getContext("2d");
+
+    let posX = event.clientX
+    let posY = event.clientY
+    console.log(posX, posY);
+
+    canvas.onmousedown = function (){bandera = true};
+    canvas.onmouseup = function (){bandera = false};
+
+    if(bandera) {
+        ctx.fillRect(posX - 10, posY - 121, 5, 5);
+        ctx.fill();
+    }
+}
