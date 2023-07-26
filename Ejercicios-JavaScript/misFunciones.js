@@ -12,10 +12,10 @@ let  conversorUnidades = (id, valor) => {
     }
     if (isNaN(valor)){ //Comprueba si el valor ingresado no es numerico
         alert("Se ingreso un valor invalido")
-        met = "";
-        pul = "";
-        pie = "";
-        yar = "";
+        met = "0";
+        pul = "0";
+        pie = "0";
+        yar = "0";
 
     } else if(id==="metro"){ //Hacer conversion de metro a otras unidades
         met = valor;
@@ -60,7 +60,7 @@ let convertirGR = (id) => {
         if(isNaN(gr)){
             alert("Se ingreso un valor invalido")
             gr = "";
-            rad = "";
+            rad = '';
         }
         rad = (gr*Math.PI)/180;
     }
@@ -68,8 +68,8 @@ let convertirGR = (id) => {
         rad = document.getElementById("radianes").value;
         if (isNaN(rad)) {
             alert("Se ingreso un valor invalido")
-            gr = "";
-            rad = "";
+            gr = "0";
+            rad = "0";
         }
         gr = (rad*180)/Math.PI;
     }
